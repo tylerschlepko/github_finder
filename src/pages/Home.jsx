@@ -1,8 +1,12 @@
 import React from 'react'
+import UserResults from '../components/users/UserResults'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      {/* SEARCH COMPONENT */}
+      <UserResults/>
+    </div>
   )
 }
 
