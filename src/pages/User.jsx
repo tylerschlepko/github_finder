@@ -44,20 +44,19 @@ function User() {
                         Back To Search
                     </Link>
                 </div>
-                <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 md:gap-8">
-                    <div className="custom-card-image mb-6 md:mb-0">
-                        <div className="rounded-lg shadow-xl card image-full">
+                <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8">
+                    <div className='custom-card-image mb-6 md:mb-0'>
+                        <div className='rounded-lg shadow-xl card image-full'>
                             <figure>
-                                <img src={avatar_url} alt="" />
+                                <img src={avatar_url} alt='' />
                             </figure>
-                            <div className="card-body justify-end">
-                                <h2 className="card-title mb-0">
-                                    {name}
-                                </h2>
-                                <p>{login}</p>
+                            <div className='card-body justify-end'>
+                                <h2 className='card-title mb-0'>{name}</h2>
+                                <p className='flex-grow-0'>{login}</p>
                             </div>
                         </div>
                     </div>
+
                     <div className="col-span-2">
                         <div className="mb-6">
                             <h1 className="text-3xl card-title">
@@ -76,6 +75,7 @@ function User() {
                                 <a href={html_url} target='_blank' rel='noreferrer' className='btn btn-outline'>Visit Github Profile</a>
                             </div>
                         </div>
+
                         <div className="w-full rounded-lg shadow-md bg-base-100 stats">
                             {location && (
                                 <div className="stat">
